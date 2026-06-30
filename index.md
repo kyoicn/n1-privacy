@@ -1,6 +1,6 @@
 # Privacy Policy / 隐私政策
 
-**Last updated / 最后更新：2026-06-27**
+**Last updated / 最后更新：2026-07-01**
 
 ---
 
@@ -14,8 +14,7 @@ explains what data we collect, how we use it, and your rights.
 
 ### 2. Data we do **not** collect
 
-- **No user accounts.** The App does not require sign-up, email, phone number, or social-media login.
-- **No personally identifiable information (PII).** We do not collect your name, email, location, contacts, IDFA, or any device identifier that can identify you.
+- **No user accounts.** The App does not require sign-up, email, phone number, or social-media login to use the product.
 - **No analytics SDKs.** No Firebase, Google Analytics, Sentry, Mixpanel, or comparable third-party telemetry.
 - **No advertising.** No ads, no ad networks, no profiling.
 - **No social features.** No sharing, no comments, no UGC visible to others.
@@ -27,6 +26,7 @@ explains what data we collect, how we use it, and your rights.
 | Japanese text you paste, URLs you import, words you tap | NLP analysis (tokenization, grammar annotation, translation, quiz generation) | Locally on your device (SQLite + AsyncStorage). Optionally sent to our backend for processing. | Yes — temporarily, for the duration of the request only |
 | Reading progress, mastered/flagged words, quiz answers | Tracking your learning progress and powering the "memory star map" | Locally on your device only | **No** — never leaves your device |
 | Invite code | Beta access control to prevent backend abuse | Locally on your device + sent as HTTP header to our backend on each API call | Yes — for authorization |
+| **Invite-code application data** — contact info (email / messaging handle) and the use-case description you submit in "Apply for invite code" | To identify you and reply with an invite code | Stored in our server logs only as long as needed to process and respond to your application (typically up to a few weeks); not used for any other purpose | Yes — submitted when you tap "Submit application" |
 
 ### 4. How server-side processing works
 
@@ -89,8 +89,7 @@ N1（以下简称「本应用」）是一款面向 JLPT N2-N1 学习者的日语
 
 ### 2. 我们**不**收集的数据
 
-- **不需要账号。** 本应用不要求注册、不要求邮箱 / 手机号 / 社交登录。
-- **不收集个人身份信息（PII）。** 我们不收集你的姓名、邮箱、地理位置、通讯录、IDFA 或任何可识别你身份的设备标识。
+- **不要求注册账号。** 本应用使用本身不要求注册、不要求邮箱 / 手机号 / 社交登录。
 - **不接入数据分析 SDK。** 没有 Firebase / Google Analytics / Sentry / Mixpanel 等第三方埋点。
 - **没有广告。** 不显示广告、不接入广告网络、不做用户画像。
 - **没有社交功能。** 没有分享 / 评论 / 用户互见的 UGC。
@@ -102,6 +101,7 @@ N1（以下简称「本应用」）是一款面向 JLPT N2-N1 学习者的日语
 | 你粘贴的日文、导入的网址、点击查询的词汇 | 自然语言分析（分词、语法标注、翻译、出题）| 本地（设备 SQLite + AsyncStorage），按需发送服务器临时处理 | 是——仅在请求期间临时发送 |
 | 阅读进度、已掌握 / 标记的词汇、测验答题记录 | 追踪学习进度、驱动「记忆星图」可视化 | **仅本地** | **否**——永远不离开你的设备 |
 | 邀请码 | 内测期访问控制，防止后端被滥用 | 本地保存 + 每次 API 调用时通过 HTTP 头发给后端 | 是——用于授权 |
+| **邀请码申请数据** ——你在「申请邀请码」表单提交的联系方式（邮箱 / 即时通讯账号）与使用场景描述 | 用于识别申请人并回复邀请码 | 仅保存在我们的服务器日志中，保留时长不超过处理你的申请所需（通常几周），不用于其它目的 | 是——你点「提交申请」时发送 |
 
 ### 4. 服务端处理的机制
 
