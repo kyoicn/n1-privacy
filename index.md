@@ -75,7 +75,7 @@ will reflect any changes. Material changes will be surfaced in the App itself.
 
 Questions about this policy or your data:
 
-**Email: kyoi.cn@gmail.com**
+**Email: kyoicn@gmail.com**
 
 ---
 
@@ -145,4 +145,4 @@ N1（以下简称「本应用」）是一款面向 JLPT N2-N1 学习者的日语
 
 如对本政策或你的数据有任何疑问，请联系：
 
-**邮箱：kyoi.cn@gmail.com**
+**邮箱：kyoicn@gmail.com**
