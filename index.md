@@ -31,21 +31,18 @@ explains what data we collect, how we use it, and your rights.
 ### 4. How server-side processing works
 
 When you import an article, look up a word, request a translation, or generate a quiz,
-your request is sent to our backend (hosted on Fly.io, region: Tokyo) over HTTPS.
-The backend processes the request and returns the result. **We do not persist your
-content** in any database. Standard platform request logs (Fly.io) may briefly include
-the first ~50 characters of a request body for debugging; these logs are ephemeral
-and rotated automatically by Fly.io.
+your request is sent to our cloud server over HTTPS. The server processes the request
+and returns the result. **We do not persist your content** in any database. Standard
+hosting-platform request logs may briefly include the first ~50 characters of a request
+body for debugging; these logs are ephemeral and automatically rotated.
 
 ### 5. Third parties involved in processing
 
 To deliver core functionality the backend uses:
 
-- **DeepSeek** (LLM provider) — for grammar annotation, translation, and quiz
-  generation. Your text snippets are sent to DeepSeek's API for inference. DeepSeek's
-  privacy policy: https://platform.deepseek.com/privacy
-- **Jina Reader / trafilatura** — for extracting article text from URLs you submit.
-- **Fly.io** — the platform hosting our backend.
+- A third-party Large Language Model service — for grammar annotation, translation, and quiz generation. Your text snippets are sent to that service for inference and are not retained.
+- A third-party article-extraction service — for fetching the body content of URLs you submit.
+- A cloud hosting provider — for hosting our backend.
 
 We do not send your data to any third party for marketing or analytics purposes.
 
@@ -108,20 +105,17 @@ N1（以下简称「本应用」）是一款面向 JLPT N2-N1 学习者的日语
 
 ### 4. 服务端处理的机制
 
-当你导入文章、查询词义、请求翻译或生成测验题时，请求通过 HTTPS 发送到我们的后端
-（部署于 Fly.io，区域：东京）。后端处理后返回结果。**我们不会把你的内容持久化到任何数据库**。
-平台（Fly.io）默认请求日志可能会临时记录请求体的前 ~50 个字符用于调试，
-这些日志由 Fly.io 自动轮转、不长期保留。
+当你导入文章、查询词义、请求翻译或生成测验题时，请求通过 HTTPS 发送到我们的云端服务器。
+服务器处理后返回结果。**我们不会把你的内容持久化到任何数据库**。托管平台的默认请求日志
+可能会临时记录请求体的前 ~50 个字符用于调试，这些日志会自动轮转、不长期保留。
 
 ### 5. 处理过程中涉及的第三方
 
 为实现核心功能，后端使用以下第三方服务：
 
-- **DeepSeek**（大语言模型）——用于语法标注、翻译、出题。
-  你的文本片段会发送到 DeepSeek API 做推理。DeepSeek 隐私政策：
-  https://platform.deepseek.com/privacy
-- **Jina Reader / trafilatura**——用于从你提交的网址抽取正文。
-- **Fly.io**——后端托管平台。
+- 一家第三方大语言模型服务——用于语法标注、翻译、出题。你的文本片段会发送到该服务做推理，**不会**被该服务保留。
+- 一家第三方网页正文抽取服务——用于从你提交的网址抽取正文。
+- 一家云端托管服务商——承载我们的后端运行。
 
 我们不会把你的数据用于营销 / 数据分析目的发给第三方。
 
